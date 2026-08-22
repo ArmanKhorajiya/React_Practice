@@ -8,38 +8,25 @@ function App() {
   function add() {
     setResult(Number(num1) + Number(num2));
   }
-
   function subtract() {
     setResult(Number(num1) - Number(num2));
   }
-
   function multiply() {
     setResult(Number(num1) * Number(num2));
   }
-
   function divide() {
     setResult(Number(num1) / Number(num2));
   }
-
+  
   return (
     <div>
       <h1>Simple Calculator</h1>
 
-      <input
-        type="number"
-        placeholder="Enter first number"
-        value={num1}
-        onChange={(e) => setNum1(e.target.value)}
-      />
+      <input type="number" placeholder="Enter first number" value={num1} onChange={(e) => setNum1(e.target.value)}/>
 
       <br /><br />
 
-      <input
-        type="number"
-        placeholder="Enter second number"
-        value={num2}
-        onChange={(e) => setNum2(e.target.value)}
-      />
+      <input type="number" placeholder="Enter first number" value={num2} onChange={(e) => setNum2(e.target.value)}/>
 
       <br /><br />
 
