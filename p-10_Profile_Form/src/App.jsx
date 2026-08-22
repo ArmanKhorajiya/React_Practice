@@ -6,10 +6,10 @@ function App(){
   const [city,setCity]=useState("");
   const [course,setCourse]=useState("");
   const [isLogin,setIsLogin]=useState(false);
-const handleSubmit=(e)=>{
-  e.preventDefault();
-  setIsLogin(true);
-}
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    setIsLogin(true);
+  }
 
   return(
     <div>
